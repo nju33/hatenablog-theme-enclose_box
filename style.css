@@ -1,0 +1,576 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Armata);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+a {
+  color: #e5a272;
+}
+a:hover {
+  color: #efc7aa;
+}
+
+a.keyword {
+  color: #695d53;
+}
+a.keyword:hover {
+  color: #8e7e70;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.entry-content h1 {
+  font-size: 2.3em;
+  margin: 0.15em 0;
+}
+.entry-content h2 {
+  font-size: 2em;
+  margin: 0.2em 0;
+}
+.entry-content h3 {
+  font-size: 1.8em;
+  margin: 0.45em 0;
+}
+.entry-content h4 {
+  font-size: 1.4em;
+  margin: 0.5em 0;
+}
+.entry-content h5 {
+  font-size: 1.25em;
+  margin: 0.5em 0;
+}
+.entry-content h6 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+ul, li, dl {
+  line-height: 2;
+}
+
+ul {
+  list-style: circle;
+  margin-left: 2em;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 2em;
+}
+
+dd {
+  margin-left: 1em;
+}
+
+table {
+  border: 1px solid #b3a696;
+}
+
+th {
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130304/20130304224535.png");
+}
+
+th, td {
+  border: 1px solid #b3a696;
+  padding: 0.55em 1em;
+}
+
+pre, blockquote, .hatena-asin-detail {
+  border: 1px solid #b3a696;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+}
+
+pre, blockquote {
+  padding: 1em;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130304/20130304224535.png");
+}
+
+blockquote {
+  padding-top: 2em;
+  position: relative;
+}
+blockquote:before {
+  position: absolute;
+  content: "“";
+  color: #b3a696;
+  top: 0;
+  left: 0.55em;
+  font-size: 2.1em;
+}
+
+pre {
+  -webkit-box-shadow: 0 0 13px -3px #b3a696;
+  -moz-box-shadow: 0 0 13px -3px #b3a696;
+  box-shadow: 0 0 13px -3px #b3a696;
+  border: 1px solid #b3a696;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130304/20130304224535.png");
+}
+
+body {
+  font-family: Verdana, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background: #ffedd5;
+  font-size: 1em;
+  line-height: 1.9;
+  color: #695d53;
+  border-left: 37px solid #fcfcfc;
+  border-right: 37px solid #fcfcfc;
+}
+
+#globalheader-container {
+  background-color: #fcfcfc;
+  border-bottom: 2px solid #ffdcac;
+}
+#globalheader-container:after {
+  content: "▼";
+  font-size: 5.5em;
+  position: absolute;
+  color: #fcfcfc;
+  top: -0.24em;
+  left: 48%;
+  text-shadow: 0 5px 0 #ffdcac, 2px 3px 0 #ffdcac, -2px 3px 0 #ffdcac;
+}
+
+#wrapper {
+  *zoom: 1;
+  display: inline;
+  float: left;
+  width: 61.53846%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#wrapper:before, #wrapper:after {
+  content: "";
+  display: table;
+}
+#wrapper:after {
+  clear: both;
+}
+
+#blog-title {
+  width: 100%;
+  height: 11em;
+  padding: 1.3em 0;
+}
+
+#title {
+  font-size: 3.4em;
+  text-align: center;
+  margin-top: 0.8em;
+}
+#title a {
+  color: #695d53;
+  text-decoration: none;
+  -webkit-transition: all, 0.5s, ease-in-out, 0.5s;
+  -moz-transition: all, 0.5s, ease-in-out, 0.5s;
+  -o-transition: all, 0.5s, ease-in-out, 0.5s;
+  transition: all, 0.5s, ease-in-out, 0.5s;
+  text-shadow: 0 1px 2px #b3a696;
+  font-family: "Armata", sans-serif;
+}
+#title a:hover {
+  color: #efc7aa;
+}
+
+#blog-description {
+  text-align: center;
+  line-height: 1;
+  position: relative;
+  bottom: 1em;
+}
+
+#content {
+  width: 960px;
+  margin: -1em auto 2em;
+  *zoom: 1;
+}
+#content:before, #content:after {
+  content: "";
+  display: table;
+}
+#content:after {
+  clear: both;
+}
+
+#main {
+  *zoom: 1;
+  display: block;
+  width: 100%;
+}
+#main:before, #main:after {
+  content: "";
+  display: table;
+}
+#main:after {
+  clear: both;
+}
+
+section.autopagerize_page_element {
+  display: inline;
+  float: left;
+  width: 61.53846%;
+  background-color: #fcfcfc;
+  border: 8px solid #fcfcfc;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.hentry:not(:last-child) {
+  margin-bottom: 3em;
+}
+
+.hentry {
+  border: 8px solid #fcfcfc;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+}
+
+.entry-header {
+  background: #b3a696;
+  position: relative;
+  border-bottom: 3px dashed #fcfcfc;
+}
+.entry-header a {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+.entry-header a:hover {
+  color: #695d53;
+}
+
+.hyphen {
+  display: none;
+}
+
+.date, .categories, .entry-header-menu {
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+.date {
+  margin-left: 1em;
+  padding-top: 1.3em;
+  width: 8em;
+}
+
+.date-year:after {
+  content: "年";
+}
+
+.date-month:after {
+  content: "月";
+}
+
+.date-day:after {
+  content: "日";
+}
+
+.categories {
+  position: absolute;
+  top: 1.3em;
+  left: 10em;
+  width: 32em;
+}
+.categories a {
+  border-bottom: 1px dashed #fcfcfc;
+  margin: 0 0.34em;
+}
+
+.entry-header-menu {
+  position: absolute;
+  top: 1.3em;
+  right: 1em;
+}
+.entry-header-menu:before {
+  content: "…";
+  letter-spacing: 0.2em;
+  color: #fcfcfc;
+}
+
+.entry-title {
+  font-size: 2.1em;
+  padding: 0.34em 0.3em;
+}
+
+.entry-content, .entry-footer {
+  background: #fcfcfc;
+  padding: 1em;
+}
+
+img.hatena-fotolife, img.magnifiable {
+  max-width: 100%;
+  margin: 0 auto 1em;
+  width: auto;
+  display: block;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+  padding: 0.5em;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130304/20130304224535.png");
+  -webkit-box-shadow: 0 2px 5px 0 #b3a696;
+  -moz-box-shadow: 0 2px 5px 0 #b3a696;
+  box-shadow: 0 2px 5px 0 #b3a696;
+}
+
+img.hatena-image-left, img.hatena-image-right {
+  max-width: 31%;
+  display: inline;
+}
+
+a img.hatena-image-left {
+  float: left;
+  margin: 0 1em 0 0;
+}
+
+a img.hatena-image-right {
+  float: right;
+  margin: 0 0 0 1em;
+}
+
+.entry-content .hatena-asin-detail {
+  *zoom: 1;
+  border: 1px solid #b3a696;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130304/20130304224535.png");
+}
+.entry-content .hatena-asin-detail:before, .entry-content .hatena-asin-detail:after {
+  content: "";
+  display: table;
+}
+.entry-content .hatena-asin-detail:after {
+  clear: both;
+}
+.entry-content .hatena-asin-detail .hatena-asin-detail-info {
+  display: inline;
+  float: left;
+  width: 61.53846%;
+  padding-left: 1em;
+  border-left: 1px dashed #c3c3c3;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.entry-content .hatena-asin-detail .hatena-asin-detail-info ul {
+  line-height: 1.3;
+}
+
+.hatena-asin-detail > a {
+  display: inline;
+  float: left;
+  width: 30.76923%;
+  margin-right: 7.69231%;
+  display: block;
+  text-align: center;
+}
+
+.entry-content .hatena-asin-detail .hatena-asin-detail-image {
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  float: none;
+}
+
+.entry-footer {
+  line-height: 1;
+}
+
+.comment {
+  list-style: none;
+  margin-left: 1em;
+}
+
+.entry-comment {
+  line-height: 1.3;
+}
+
+.comment-content {
+  margin-left: 1em;
+}
+
+.leave-comment-title {
+  margin-left: 1em;
+}
+.leave-comment-title:before {
+  content: "…";
+  color: #695d53;
+}
+
+#box2 {
+  display: inline;
+  float: left;
+  width: 30.76923%;
+  margin-left: 7.69231%;
+  background-color: #fcfcfc;
+  border: 8px solid #fcfcfc;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.hatena-module-title {
+  background-color: #b3a696;
+  padding-left: 1em;
+  border-bottom: 2px dashed #fcfcfc;
+  color: #fcfcfc;
+}
+.hatena-module-title a {
+  color: #fcfcfc;
+}
+.hatena-module-title a:hover {
+  color: #695d53;
+}
+
+.hatena-module-body {
+  margin-left: 2em;
+  font-size: 0.89em;
+  padding: 1.3em 0.5em;
+}
+.hatena-module-body ul {
+  list-style: none;
+  margin: 0;
+  line-height: 1.5;
+}
+.hatena-module-body a {
+  color: #695d53;
+}
+.hatena-module-body a:hover {
+  color: #e5a272;
+}
+
+.search-module-input, .search-module-button {
+  margin: 0;
+  paddding: 0;
+}
+
+.search-module-input {
+  outline-color: #e5a272;
+  text-indent: 0.55em;
+  border: none;
+  border-left: 1px solid #b3a696;
+  border-right: 2px dotted #b3a696;
+}
+
+.search-module-button {
+  background-color: #b3a696;
+  border: none;
+  color: #fcfcfc;
+  position: relative;
+  right: 0.39em;
+}
+.search-module-button:hover {
+  background-color: #c4baae;
+  cursor: pointer;
+}
+
+#footer {
+  clear: both;
+  text-align: center;
+  font-size: 0.77em;
+  line-height: 1.3;
+  height: 37px;
+  background-color: #fcfcfc;
+  border-top: 2em solid #ffedd5;
+}
+#footer a {
+  color: #695d53;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #8e7e70;
+}
+
+.breadcrumb {
+  width: 960px;
+  margin: 0 auto;
+  padding: 1em 1em 1em 2em;
+}
+
+section.autopagerize_page_element {
+  line-height: 1.5;
+}
+section.autopagerize_page_element ul .categories {
+  position: static;
+}
+section.autopagerize_page_element ul .categories a {
+  text-decoration: none;
+  border-bottom: 1px dashed #695d53;
+}
+section.autopagerize_page_element ul li a, section.autopagerize_page_element a.entry-title {
+  font-size: 1em;
+}
+section.autopagerize_page_element ul li a:hover, section.autopagerize_page_element a.entry-title:hover {
+  color: #e5a272;
+}
+section.autopagerize_page_element h1 {
+  font-size: 1em;
+}
+section.autopagerize_page_element h1 a {
+  color: #695d53;
+}
+section.autopagerize_page_element h1 a:hover {
+  color: #e5a272;
+}
