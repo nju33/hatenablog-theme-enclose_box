@@ -210,6 +210,10 @@ body {
   padding: 1.3em 0;
 }
 
+[class*="header-image-"] #blog-title {
+  height: 17em;
+}
+
 #title {
   font-size: 3.4em;
   text-align: center;
@@ -234,6 +238,11 @@ body {
   line-height: 1;
   position: relative;
   bottom: 1em;
+}
+
+.header-image-enable #blog-title #title a, .header-image-enable #blog-title #blog-description {
+  color: inherit;
+  text-shadow: 0 0 0;
 }
 
 #content {
@@ -456,6 +465,19 @@ a img.hatena-image-right {
   color: #695d53;
 }
 
+.pager {
+  position: relative;
+}
+
+.pager-next, .page-next {
+  padding: 0 0.5em;
+}
+
+.pager-prev {
+  position: absolute;
+  right: 0;
+}
+
 #box2 {
   display: inline;
   float: left;
@@ -549,28 +571,36 @@ a img.hatena-image-right {
   padding: 1em 1em 1em 2em;
 }
 
-section.autopagerize_page_element {
+[class*="page-a"] #main {
   line-height: 1.5;
+  background-color: #fcfcfc;
+  border: 8px solid #fcfcfc;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-section.autopagerize_page_element ul .categories {
+[class*="page-a"] #main ul .categories {
   position: static;
 }
-section.autopagerize_page_element ul .categories a {
+[class*="page-a"] #main ul .categories a {
   text-decoration: none;
   border-bottom: 1px dashed #695d53;
 }
-section.autopagerize_page_element ul li a, section.autopagerize_page_element a.entry-title {
+[class*="page-a"] #main ul li a, [class*="page-a"] #main a.entry-title {
   font-size: 1em;
 }
-section.autopagerize_page_element ul li a:hover, section.autopagerize_page_element a.entry-title:hover {
+[class*="page-a"] #main ul li a:hover, [class*="page-a"] #main a.entry-title:hover {
   color: #e5a272;
 }
-section.autopagerize_page_element h1 {
+[class*="page-a"] #main h1 {
   font-size: 1em;
 }
-section.autopagerize_page_element h1 a {
+[class*="page-a"] #main h1 a {
   color: #695d53;
 }
-section.autopagerize_page_element h1 a:hover {
+[class*="page-a"] #main h1 a:hover {
   color: #e5a272;
 }
